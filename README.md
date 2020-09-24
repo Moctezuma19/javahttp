@@ -15,7 +15,7 @@ Abrir una terminal y dirigirse a la carpeta donde ha clonado este repositorio y 
 
 Construye la imagen correspondiente.
 
-### `docker run <usuario_docker/proyecto>`
+### `docker run -p <puerto_externo>:8000 <usuario_docker/proyecto>`
 
 Inicia el contenedor, de esta forma es accesible el servicio definido en `Test.py` en `localhost:8000/api`.
 
