@@ -4,7 +4,7 @@ Este archivo contiene la información necesaria para construir la imagen de dock
 
 ## Contenido de las imagen
 
-La imagen contiene openjdk 8 y el servicio que utiliza HTTP nativo del lenguaje de programación.
+La imagen contiene openjdk 8 y el servicio que utiliza HTTPServer nativo del lenguaje de programación.
 
 ## Instrucciones para construir la imagen y correr el contenedor
 
@@ -28,7 +28,7 @@ Escribir `docker exec -it < id contenedor> sh`.
 
 ## Instrucciones para cambiar el puerto de acceso a la aplicación
 
-Ubicar la línea que contiene la palabra `InetSocketAddress(8000)` en el archivo `Handler.java` y modificar parametro de dicho método (Ej. `HttpServer server = HttpServer.create(new InetSocketAddress(1080), 0);`, de esta forma sería accesible el servicio a través de `localhost:1080/api`), claramente luego volver a ejecutar `docker build -t <usuario_docker/proyecto> .`, si estaba el contenedor corriendo entonces antes ejecutar `docker stop < id contenedor>`.
+Ubicar la línea que contiene la palabra `InetSocketAddress(8000)` en el archivo `Handler.java` y modificar el parámetro de dicho método (Ej. `HttpServer server = HttpServer.create(new InetSocketAddress(1080), 0);`, de esta forma sería accesible el servicio a través de `localhost:1080/api`), claramente luego volver a ejecutar `docker build -t <usuario_docker/proyecto> .`, si estaba el contenedor corriendo entonces antes ejecutar `docker stop < id contenedor>`.
 
 ## Instrucciones para modificar las rutinas que realiza nuestro servicio
 
