@@ -12,6 +12,7 @@ public class Test {
             server.createContext("/api", new Handler());
             server.setExecutor(null); // creates a default executor
             server.start();
+            System.out.println("Servidor iniciado en localhost:8000");
         } catch(Exception e){
             System.out.println(e);
         }
