@@ -2,7 +2,7 @@
 
 Este archivo contiene la información necesaria para construir la imagen de docker e iniciar el contenedor
 
-## Contenido de las imagen
+## Contenido de la imagen
 
 La imagen contiene openjdk 8 y el servicio que utiliza HTTPServer nativo del lenguaje de programación.
 
