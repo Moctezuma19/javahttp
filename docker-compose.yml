@@ -1,0 +1,12 @@
+version: '3.1'
+services:
+  db:
+    build: ./sql
+    environment:
+      - POSTGRES_PASSWORD=1234
+  servidor:
+    depends_on:
+      - db
+    build: ./javahttp
+    ports:
+      - '8000:8000'
