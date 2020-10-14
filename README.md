@@ -10,6 +10,6 @@ Abrir una terminal y dirigirse a la carpeta donde ha clonado este repositorio y 
 
 ### `docker-compose up --build`
 
-## Instrucciones para detener el contenedor
+## Instrucciones para detener los contenedores
 
 Escribir  `docker-compose down`.
